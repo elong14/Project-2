@@ -1,98 +1,88 @@
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set a background color and font for the entire page */
+/* Set a playful background color */
 body {
-  background-color: #f4f4f4;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
+  background-color: #FFD700; /* Playful gold */
 }
 
-/* Style the header */
+/* Add a professional font for the entire page */
+body {
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* Style the header with playful colors and text */
 header {
-  background-color: #333;
+  background-color: #FF5722; /* Playful orange */
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-/* Common style for navigation */
-.nav-list {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-list li {
-  display: inline;
-  margin-right: 20px;
-}
-
-/* Create a centered horizontal navigation bar (identical on both pages) */
-.nav-list {
+/* Create a centered horizontal navigation bar with playful hover effects */
+nav {
   display: flex;
   justify-content: center;
-  background-color: #333;
+  background-color: #FF5722; /* Match the header */
   padding: 10px 0;
 }
 
-.nav-list a {
+nav a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
+  margin: 0 20px;
+  transition: color 0.3s; /* Smooth color transition on hover */
 }
 
-.nav-list a:hover {
-  text-decoration: underline;
+nav a:hover {
+  color: #FFC107; /* Playful yellow on hover */
 }
 
-/* Style page titles */
-.page-title {
-  background-color: #333;
-  color: #fff;
+/* Add playful animations to the page titles */
+h1.page-title {
+  background-color: #FFC107; /* Playful yellow */
+  color: #333; /* Professional dark text */
   padding: 10px;
   text-align: center;
+  animation: rotate 2s linear infinite; /* Fun rotation animation */
 }
 
-/* Style the main content area */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style the main content area with a playful background color */
 .content {
-  background-color: #fff;
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 5px;
+  background-color: #FFD700; /* Playful gold */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px; /* Slightly rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style buttons */
+/* Style links with playful colors and underline on hover */
+a {
+  color: #FF5722; /* Playful orange */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style buttons with gradient backgrounds and hover effects */
 button {
-  background-color: #007BFF;
+  background: linear-gradient(to bottom, #E91E63, #C2185B); /* Playful gradient */
   color: #fff;
   border: none;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s; /* Smooth background transition on hover */
 }
 
 button:hover {
-  background-color: #0056b3;
-}
-/* Common styles (same as in previous example) */
-
-/* Additional style for fixed-width layout */
-.fixed-width {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Different font styles (one imported and one browser native) */
-body {
-  font-family: 'Open Sans', Arial, sans-serif;
-}
-
-.page-title {
-  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to bottom, #C2185B, #E91E63); /* Reverse gradient on hover */
 }
