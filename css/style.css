@@ -1,10 +1,10 @@
 body {
-    background-color:#FE0DFE;
+    background-color:#D0B49F;
     font-family: Georgia, Times, serif;
 }
 
 #navbar {
-    background-color:#AC72D4;
+    background-color:#E4D4C8;
     padding: 15px;
     margin: 25px 120px;
     color: #618685;
@@ -14,15 +14,16 @@ body {
 a {
     text-decoration: none;
     padding: 10px 20px;
-    color: #36486b;
+    color: #523A28;
 }
 
 a:hover{
     background-color:coral;
+    padding: 5px 10px;
 }
 
 section {
-    background-color: #87D7D9;
+    background-color: #D0B49F;
     margin: 15px auto;
     max-width: 850px;
     border: 8px;
