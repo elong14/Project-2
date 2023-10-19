@@ -1,10 +1,10 @@
 body {
-    background-color: light pink;
+    background-color:#FE0DFE;
     font-family: Georgia, Times, serif;
 }
 
 #navbar {
-    background-color:#fefbd8;
+    background-color:#AC72D4;
     padding: 15px;
     margin: 25px 120px;
     color: #618685;
@@ -22,7 +22,7 @@ a:hover{
 }
 
 section {
-    background-color: #618685;
+    background-color: #87D7D9;
     margin: 15px auto;
     max-width: 850px;
     border: 8px;
