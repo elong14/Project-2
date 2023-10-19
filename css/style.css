@@ -17,6 +17,10 @@ a {
     color: #36486b;
 }
 
+a:hover{
+    background-color:coral;
+}
+
 section {
     background-color: #618685;
     margin: 15px auto;
