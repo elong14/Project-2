@@ -1,88 +1,98 @@
-/* Set a playful background pattern */
-body {
-  background: url('background-pattern.png');
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Add a professional font for the entire page */
+/* Set a background color and font for the entire page */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
 }
 
-/* Style the header with playful colors and text */
+/* Style the header */
 header {
-  background-color: #FF5722; /* Playful orange */
+  background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-/* Create a centered horizontal navigation bar with playful hover effects */
-nav {
+/* Common style for navigation */
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Create a centered horizontal navigation bar (identical on both pages) */
+.nav-list {
   display: flex;
   justify-content: center;
-  background-color: #FF5722; /* Match the header */
+  background-color: #333;
   padding: 10px 0;
 }
 
-nav a {
+.nav-list a {
   color: #fff;
   text-decoration: none;
-  margin: 0 20px;
-  transition: color 0.3s; /* Smooth color transition on hover */
+  padding: 10px 20px;
 }
 
-nav a:hover {
-  color: #FFC107; /* Playful yellow on hover */
-}
-
-/* Add playful animations to the page titles */
-h1.page-title {
-  background-color: #FFC107; /* Playful yellow */
-  color: #333; /* Professional dark text */
-  padding: 10px;
-  text-align: center;
-  animation: bounce 1s infinite alternate; /* Fun bounce animation */
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Style the main content area with a playful background color */
-.content {
-  background-color: #FFD740; /* Lighter yellow */
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px; /* Slightly rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Style links with playful colors and underline on hover */
-a {
-  color: #2196F3; /* Playful blue */
-  text-decoration: none;
-}
-
-a:hover {
+.nav-list a:hover {
   text-decoration: underline;
 }
 
-/* Style buttons with gradient backgrounds and hover effects */
+/* Style page titles */
+.page-title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the main content area */
+.content {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style buttons */
 button {
-  background: linear-gradient(to bottom, #E91E63, #C2185B); /* Playful gradient */
+  background-color: #007BFF;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s; /* Smooth background transition on hover */
 }
 
 button:hover {
-  background: linear-gradient(to bottom, #C2185B, #E91E63); /* Reverse gradient on hover */
+  background-color: #0056b3;
+}
+/* Common styles (same as in previous example) */
+
+/* Additional style for fixed-width layout */
+.fixed-width {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Different font styles (one imported and one browser native) */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.page-title {
+  font-family: 'Comic Sans MS', cursive;
 }
