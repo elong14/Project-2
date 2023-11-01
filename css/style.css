@@ -4,6 +4,10 @@ body {
     font-family: Georgia, Times, serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #navbar {
     background-color:#E4D4C8;
     padding: 15px;
